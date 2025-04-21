@@ -69,7 +69,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 mkdir -p /home/vagrant/.kube
 sudo cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
-sudo chown $(id -u):$(id -g) /home/vagrant/.kube/config
+sudo chown vagrant:vagrant /home/vagrant/.kube/config
 
 
 sudo kubeadm join k8s-endpoint:6443 --token 7sibm4.kcawyjy2sakmpgjv \
